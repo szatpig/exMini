@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/express/search/main",
+    "pages/prepost/post/main",
+    "pages/user/account/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鑫亿邦物流",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "borderStyle":"gray",
+    "list": [{
+        "pagePath": "pages/express/search",
+        "iconPath":"images/search.png",
+        "selectedIconPath":"images/search_active.png"
+      },{
+      "pagePath": "pages/prepost/post",
+      "iconPath":"images/post.png",
+      "selectedIconPath":"images/post_active.png"
+    }, {
+      "pagePath": "pages/user/account",
+      "iconPath":"images/user.png",
+      "selectedIconPath":"images/user_active.png"
+    }]
+  },
+  "debug": true
+}
