@@ -31,3 +31,6 @@ export const UPCLICK = 'UPCLICK';
 
 //修改数据列表刷新状态
 export const HANDLEREFRESH = 'HANDLEREFRESH';
+
+//菜单地址
+export const SAVEADDRESS = 'SAVEADDRESS';

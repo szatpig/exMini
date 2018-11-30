@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/express/search/main",
-    "pages/prepost/post/main",
-    "pages/user/account/main"
+      "pages/express/search/main",
+      "pages/prepost/post/main",
+      "pages/prepost/done/main",
+      "pages/user/account/main",
+      "pages/user/auth/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +14,7 @@
   },
   "tabBar": {
     "backgroundColor":"#fff",
-    "borderStyle":"gray",
+    "borderStyle":"white",
     "list": [{
         "pagePath": "pages/express/search",
         "iconPath":"images/search.png",

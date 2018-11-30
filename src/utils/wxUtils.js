@@ -27,19 +27,25 @@ const wxAuthorize = async (type) =>{
   }
 };
 
-const reverseGeocoder = async function(qqmapsdk,{lng,lat}) {
-    return await qqmapsdk.reverseGeocoder({
-        location: {
-            latitude: lat,
-            longitude: lng
-        },
-        success:(data) =>{
-            return  Promise.resolve(data);
-        },
-        fail:(e)=>{
-            return  Promise.reject(e);
-        }
-    })
+const reverseGeocoder = async (qqmapsdk,{ lng,lat }) => {
+    try {
+        return await qqmapsdk.reverseGeocoder({
+            location: {
+                latitude: lat,
+                longitude: lng
+            },
+            success:(data) =>{
+                // console.log(data);
+                return Promise.resolve(data);
+            },
+            fail:(e)=>{
+                return Promise.reject(e);
+            }
+        })
+    }catch (e) {
+        return new Promise.reject(e);
+    }
+
 }
 
 

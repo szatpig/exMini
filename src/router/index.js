@@ -13,10 +13,22 @@ module.exports = [
           disableScroll: true
       }
   },{
+        path:'pages/prepost/done',
+        config: {
+            navigationBarTitleText: '快递预约寄送',
+            disableScroll: true
+        }
+    },{
       path:'pages/user/account',
       config: {
           navigationBarTitleText: '个人中心',
           disableScroll: true
       }
-  }
+  },{
+        path:'pages/user/auth',
+        config: {
+            navigationBarTitleText: '用户授权',
+            disableScroll: true
+        }
+    }
 ]

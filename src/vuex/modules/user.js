@@ -4,7 +4,7 @@
 import { USER_INFO, USER_TOKEN, USER_LOGIN_OUT, USER_OPENID} from '../types';
 
 const state={
-    userInfo:wx.getStorageSync('userInfo') || {},
+    userInfo:null,
     userToken:wx.getStorageSync('userToken') || null,
     openId:wx.getStorageSync('openId') || '',
 };
@@ -17,7 +17,6 @@ const getters={
 const mutations={
   [USER_INFO](state,res){
     state.userInfo=res;
-    state.userAvatar=res.avatar;
   },
   [USER_TOKEN](state,token){
     state.userToken=token;
@@ -34,7 +33,6 @@ const mutations={
 const actions={
   //保存用户信息
   userInfo({ commit }, res) {
-    wx.setStorageSync('userInfo',res);
     commit(USER_INFO, res);
   },
 
